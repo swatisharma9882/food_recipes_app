@@ -9,7 +9,7 @@ class OnBoardingScreen extends StatelessWidget {
       body: Stack(
         children: [
           Image.asset(
-            'assets/images/on_boarding.jpg',
+            'assets/images/on_boarding.png',
             fit: BoxFit.cover,
             width: double.infinity,
             height: double.infinity,
@@ -17,7 +17,7 @@ class OnBoardingScreen extends StatelessWidget {
           Container(
             alignment: Alignment.center,
             child: Padding(
-              padding: const EdgeInsets.all(40),
+              padding: const EdgeInsets.all(45),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -26,18 +26,21 @@ class OnBoardingScreen extends StatelessWidget {
                     "Let's${'\n'}Cooking",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold),
+                      color: Colors.white,
+                      fontSize: 40,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                  const SizedBox(height: 25),
+                  const SizedBox(height: 20),
                   const Text(
                     'Find best recipes for cooking',
-                    style: TextStyle(color: Colors.white, fontSize: 15,fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                  const SizedBox(
-                    height: 35,
-                  ),
+                  const SizedBox(height: 35),
                   SizedBox(
                     width: MediaQuery.of(context).size.width * 0.5,
                     child: ElevatedButton(
@@ -45,13 +48,8 @@ class OnBoardingScreen extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
-                          Text(
-                            'Start cooking ',
-                          ),
-                          Icon(
-                            Icons.arrow_forward,
-                            size: 20,
-                          )
+                          Text('Start cooking '),
+                          Icon(Icons.arrow_forward, size: 20)
                         ],
                       ),
                     ),
