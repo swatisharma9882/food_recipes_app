@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:food_recipes/screens/bottom_nav_bar.dart';
 import 'package:food_recipes/screens/on_boarding.dart';
 import 'package:food_recipes/theme/theme.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      home: const OnBoardingScreen(),
+      home: const BottomNavBarScreen(),
 
 
     );
