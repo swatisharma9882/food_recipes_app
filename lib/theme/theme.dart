@@ -16,11 +16,11 @@ class AppTheme {
     ),
     appBarTheme: const AppBarTheme(
       elevation: 0,
-      centerTitle: true,
+
       toolbarHeight: 100,
       backgroundColor: Colors.white,
       titleTextStyle: TextStyle(
-          fontSize: 34, color: Colors.black, fontWeight: FontWeight.bold),
+          fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
     ),
     iconTheme: const IconThemeData(
       size: 24,

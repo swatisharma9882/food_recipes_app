@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:food_recipes/screens/pages/home.dart';
+import 'package:food_recipes/screens/pages/1.dart';
+import 'package:food_recipes/screens/pages/homepages/home.dart';
 import 'package:food_recipes/screens/pages/saved_item.dart';
 import 'package:food_recipes/screens/pages/notification.dart';
 import 'package:food_recipes/screens/pages/upload_items.dart';
@@ -26,7 +27,6 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: _pages[_selectedIndex],
       floatingActionButton: SizedBox(
         height: 50,
