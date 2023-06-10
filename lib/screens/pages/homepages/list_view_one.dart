@@ -20,9 +20,7 @@ class _ListViewOneScreenState extends State<ListViewOneScreen> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      // color: Colors.grey,
       height: MediaQuery.of(context).size.height * 0.35,
-
       child: ListView.builder(
           itemCount: listViewData.length,
           scrollDirection: Axis.horizontal,
@@ -38,8 +36,9 @@ class _ListViewOneScreenState extends State<ListViewOneScreen> {
                       height: MediaQuery.of(context).size.height * 0.25,
                       width: MediaQuery.of(context).size.width * 0.75,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: Colors.black),
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.black,
+                      ),
                       child: Image.asset(
                         listViewData[index]['image'],
                         fit: BoxFit.cover,
@@ -47,7 +46,6 @@ class _ListViewOneScreenState extends State<ListViewOneScreen> {
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
-
                       children: [
                         SizedBox(
                           height: MediaQuery.of(context).size.height * 0.2,
@@ -58,16 +56,19 @@ class _ListViewOneScreenState extends State<ListViewOneScreen> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.all(10),
-                                height: MediaQuery.of(context).size.height * 0.04,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.04,
                                 width: MediaQuery.of(context).size.width * 0.13,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
                                   color: Colors.grey!.withOpacity(0.5),
                                 ),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
                                   children: const [
-                                    Icon(Icons.star, color: Colors.white, size: 16),
+                                    Icon(Icons.star,
+                                        color: Colors.white, size: 16),
                                     Text('4.5',
                                         style: TextStyle(color: Colors.white)),
                                   ],
@@ -78,8 +79,7 @@ class _ListViewOneScreenState extends State<ListViewOneScreen> {
                                 height: 35,
                                 width: 35,
                                 decoration: BoxDecoration(
-                                  borderRadius:
-                                  BorderRadius.circular(20),
+                                  borderRadius: BorderRadius.circular(20),
                                   color: Colors.white,
                                 ),
                                 child: Image.asset(
@@ -91,28 +91,21 @@ class _ListViewOneScreenState extends State<ListViewOneScreen> {
                         ),
                         Container(
                           margin: const EdgeInsets.only(right: 10),
-                          height:
-                          MediaQuery.of(context).size.height *
-                              0.04,
-                          width:
-                          MediaQuery.of(context).size.width *
-                              0.13,
+                          height: MediaQuery.of(context).size.height * 0.04,
+                          width: MediaQuery.of(context).size.width * 0.13,
                           decoration: BoxDecoration(
-                            borderRadius:
-                            BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(5),
                             color: Colors.grey!.withOpacity(0.75),
                           ),
                           child: const Center(
                             child: Text(
                               '15:10',
-                              style:
-                              TextStyle(color: Colors.white),
+                              style: TextStyle(color: Colors.white),
                             ),
                           ),
                         ),
                       ],
                     ),
-
                   ],
                 ),
                 SizedBox(
@@ -121,7 +114,7 @@ class _ListViewOneScreenState extends State<ListViewOneScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
                       Text('How to make sushi at home'),
-                      Icon(Icons.more_horiz,color: Colors.black),
+                      Icon(Icons.more_horiz, color: Colors.black),
                     ],
                   ),
                 ),
